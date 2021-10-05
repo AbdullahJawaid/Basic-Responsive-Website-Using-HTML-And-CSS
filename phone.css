@@ -1,0 +1,183 @@
+/* Navbar */
+@media screen and (max-width:1000px) {
+    .navbar ul{
+        position: fixed;
+        top: 5rem;
+        left: -100%;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 10;
+
+    }
+    #click:checked ~ ul{
+
+        left: 0%;
+        
+    }
+
+    .navbar ul li{
+        margin: 2rem 0;
+    }
+    
+
+    .navbar ul li a{
+        font-size: 1.2rem;
+    }
+    .navbar ul li a:hover,
+    .navbar ul li a.active{
+       color:rgb(0, 0, 146);
+       background-color:black;
+    }
+    
+    .navbar .menu-btn i{
+        display: block;
+       
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+        z-index: 10;
+
+
+    }
+
+}
+/* banner-area */
+@media screen and (max-width:1000px) {
+    .banner-area{
+        padding:10rem 5rem;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .banner-area{
+        padding:12.5rem 3rem;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .banner-area{
+        min-height: 600px;
+    }
+    .banner-area h1{
+        font-size: 2rem;
+    }
+    .banner-area p{
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
+ .banner-area::before{
+      width: 120%;
+    }
+
+
+    .banner-area h1{
+        font-size: 30px;
+        
+    }
+ 
+}
+@media screen and (max-width:350px){
+    /* .banner-area::before{
+        width: 100%;
+      } */
+} 
+
+
+
+
+/* About Area */
+@media screen and (max-width:1000px) {
+    .about-area{
+        height: 135vh;
+        position: absolute;
+        top: 75rem;
+      width:100vw;
+    }
+    .about-right{
+    width: 1px;
+   font-size: 1rem;
+  
+    }
+    .about-right p{
+     width: 50vh;
+    }
+
+    .about-left,
+    .about-right{
+        flex-basis: 100%;
+    }
+    .about-content li{
+        padding: 1rem;
+    }
+    }
+
+
+     /* services-Area */
+    
+    @media screen and (max-width:1000px) {
+        .service-area{
+            position: relative;
+            top: 100px;
+            right: -20px;
+            height: 200vh;
+            width: 100%;
+        }
+    .service-area li {
+        flex-basis: 100%;
+    margin-bottom: 10rem;
+
+    }
+    .service-area h1 {
+       
+    margin-top: 80rem;
+
+    }
+    .service-content li:last-child{
+        margin-bottom: 0;
+    }
+    .service-content li p{
+        padding: 0;
+
+
+    }
+
+    }
+
+    /* Footer Part */
+    @media screen and (max-width:1000px) {
+        .contact-area{
+
+            position: relative;
+            top: 200px;
+            margin-bottom: 300px;
+            
+           
+
+        }
+        .contact-content li{
+            flex-basis: 100%;
+            
+            
+        
+        }
+        .contact-content li:last-child{
+            margin-bottom: 0;
+        }
+        .contact-content li p{
+            padding: 0;
+        }
+        footer{
+          display: inline-block;
+          width: 112.3%;
+        }
+    }
+    
